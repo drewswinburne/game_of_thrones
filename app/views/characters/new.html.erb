@@ -1,0 +1,11 @@
+<%= form_for (@house.@character.build) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :alive %>
+<%= f.text_field :alive %>
+
+<% f.text_field :house_id%>
+
+<%= f.submit %>
+<% end %>

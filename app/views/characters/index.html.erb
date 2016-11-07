@@ -1,0 +1,10 @@
+<% @characters.each do |char| %>
+  <div class="character">
+    <h3><%= char.name %></h3>
+    <% if char.alive then %>
+      alive
+    <% else %> <p style="color: red">deceased</p>
+    <% end %>
+<%#= char.house %>
+  </div>
+  <% end %>

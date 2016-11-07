@@ -1,0 +1,5 @@
+<h1><%= @character.name %></h1>
+<h2>Status:<% if @character.alive then %>
+  alive
+<% else %> <p style="color: red">deceased</p>
+<% end %></h2>
